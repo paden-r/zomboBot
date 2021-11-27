@@ -1,3 +1,5 @@
+DISCORD_URL = "https://discord.com/api/v9"
+
 WEDNESDAY = [
     "https://www.youtube.com/watch?v=EaVowG5Y2DI",    
     "https://www.youtube.com/watch?v=PAnKl7862qc",
@@ -53,3 +55,39 @@ WEDNESDAY = [
     "https://www.youtube.com/watch?v=bbat6cvgEJ8",
     "https://www.youtube.com/watch?v=9K4-jllrPrE"
 ]
+
+PANIK = "https://i.imgur.com/5W1cV7W.jpeg"
+
+IMAGES = [
+    "https://i.imgur.com/EfGWKP7.gif",
+    "https://i.imgur.com/jYGVmQK.jpeg",
+    "https://i.imgur.com/qSTXRRR.jpeg",
+    "https://i.imgur.com/DDUHn9p.mp4",
+    "https://i.imgur.com/EW6t8Ts.jpeg",
+    "https://i.imgur.com/gja02em.mp4",
+    "https://i.imgur.com/V5YdCmT.gif",
+    "https://i.imgur.com/FN4Nl9r.mp4",
+    "https://i.imgur.com/bnzrm8t.jpeg",
+    "https://i.imgur.com/8H7H6iR.jpeg",
+    "https://i.imgur.com/Qhr9fZd.jpeg",
+    "https://i.imgur.com/WdQCkEu.jpeg",
+    "https://i.imgur.com/xvWwInq.gif",
+    "https://i.imgur.com/SmRaRr7.mp4",
+    "https://i.imgur.com/bXCwF2W.mp4",
+    "https://i.imgur.com/VfDOUWm.png",
+    "https://i.imgur.com/jTzoG8F.png",
+    "https://i.imgur.com/Ra8X62E.jpeg",
+    "https://i.imgur.com/3XUEVt3.jpeg",
+    "https://i.imgur.com/iZWsMYo.jpeg",
+    "https://i.imgur.com/tmOxnZb.jpeg",
+    "https://i.imgur.com/3r5IC7E.mp4",
+    "https://i.imgur.com/JQmbBXC.jpeg",
+    "https://i.imgur.com/jFI8wB9.jpeg",
+    "https://i.imgur.com/TSKjOav.jpeg",
+    "https://i.imgur.com/TuQpLHw.jpeg",
+    "https://i.imgur.com/decU9y5.jpeg"
+]
+
+IMAGE_FILE = "added_wednesday.txt"
+
+VIDEO_FILE = "added_dudes.txt"
