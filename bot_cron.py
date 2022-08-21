@@ -4,7 +4,14 @@ import os
 import sys
 from pathlib import Path
 from dotenv import load_dotenv
-from constants import WEDNESDAY, DISCORD_URL
+from constants import (
+    DISCORD_URL,
+    VIDEO_INDEX
+)
+from utilities import (
+    build_list,
+    mark_as_used
+)
 
 
 class Discord_Cron:
@@ -18,7 +25,9 @@ class Discord_Cron:
         headers = {
             'Authorization': 'Bot ' + self.token
         }
-        video_link = random.choice(WEDNESDAY)
+        video_list = build_list(VIDEO_INDEX)
+        video_link = random.choice(video_list)
+        mark_as_used(VIDEO_INDEX, video_link)
         message = f"It is Wednesday my dudes\n\n {video_link}"
         data = {
             "content": message
