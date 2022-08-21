@@ -89,5 +89,7 @@ IMAGES = [
 ]
 
 IMAGE_FILE = "added_wednesday.txt"
-
 VIDEO_FILE = "added_dudes.txt"
+USED_VIDEO_AND_IMAGES = "used.json"
+VIDEO_INDEX = "videos"
+IMAGE_INDEX = "images"
