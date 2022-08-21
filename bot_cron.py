@@ -6,6 +6,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from constants import WEDNESDAY, DISCORD_URL
 
+
 class Discord_Cron:
     def __init__(self):
         dotenv_path = Path(".env_secret")
@@ -24,6 +25,7 @@ class Discord_Cron:
         }
         response = requests.post(f"{DISCORD_URL}/channels/{self.channel_id}/messages", headers=headers, data=data)
         print(response.json())
+
 
 if __name__ == "__main__":
     discord = Discord_Cron()
