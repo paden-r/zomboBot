@@ -56,16 +56,16 @@ async def wednesday(ctx):
 
 
 @commands.command(name='add_image', help='Adds image url to list of Wednesday images.  ~add_image [url to image]')
-async def add_image(ctx, url=None):
-    if url is not None:
-        add_to_file(IMAGE_FILE, url)
+async def add_image(ctx, *args):
+    if args:
+        add_to_file(IMAGE_FILE, args[0])
         await ctx.send(f"added to the list")
 
 
 @commands.command(name='add_video', help='Adds video url to list of Wednesday videos.  ~add_video [url to video]')
-async def add_video(ctx, url=None):
-    if url is not None:
-        add_to_file(VIDEO_FILE, url)
+async def add_video(ctx, *args):
+    if args:
+        add_to_file(VIDEO_FILE, args[0])
         await ctx.send(f"added to the list")
 
 
