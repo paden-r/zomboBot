@@ -1,3 +1,5 @@
+import json
+
 from constants import (
     WEDNESDAY,
     IMAGES,
