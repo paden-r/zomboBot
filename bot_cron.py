@@ -13,6 +13,8 @@ from utilities import (
     mark_as_used
 )
 
+BIRTHDAY_GIF = "https://i.kym-cdn.com/photos/images/original/000/807/541/d8a.gif"
+
 
 class Discord_Cron:
     def __init__(self):
@@ -35,13 +37,32 @@ class Discord_Cron:
         response = requests.post(f"{DISCORD_URL}/channels/{self.channel_id}/messages", headers=headers, data=data)
         print(response.json())
 
+    def send_birthday(self, name):
+        headers = {
+            'Authorization': 'Bot ' + self.token
+        }
+
+        message = f"Happy Birthday {name}!!\n\n {BIRTHDAY_GIF}"
+        data = {
+            "content": message
+        }
+        response = requests.post(f"{DISCORD_URL}/channels/{self.channel_id}/messages", headers=headers, data=data)
+        print(response.json())
+
 
 if __name__ == "__main__":
-    discord = Discord_Cron()
-    if not len(sys.argv) == 2:
+    if not len(sys.argv) < 2:
         print("Missing arguments.")
-    elif sys.argv[1] in ['wednesday']:
-        if sys.argv[1] == 'wednesday':
+    discord = Discord_Cron()
+    command = sys.argv[1]
+    match command:
+        case "wednesday":
             discord.send_wednesday()
-    else:
-        print(f"Unknown argument: {sys.argv[1]}")
+        case "birthday":
+            try:
+                name = sys.argv[2]
+                discord.send_birthday(name)
+            except IndexError:
+                print("Missing name")
+        case _:
+            print(f"Unknown argument: {sys.argv[1]}")
