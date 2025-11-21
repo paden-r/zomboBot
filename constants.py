@@ -1,7 +1,7 @@
 DISCORD_URL = "https://discord.com/api/v9"
 
 WEDNESDAY = [
-    "https://www.youtube.com/watch?v=EaVowG5Y2DI",    
+    "https://www.youtube.com/watch?v=EaVowG5Y2DI",
     "https://www.youtube.com/watch?v=PAnKl7862qc",
     "https://www.youtube.com/watch?v=frNFBv2QIoE",
     "https://www.youtube.com/watch?v=Xf_wuAQ-t44",
@@ -57,6 +57,8 @@ WEDNESDAY = [
 ]
 
 PANIK = "https://i.imgur.com/5W1cV7W.jpeg"
+
+AMERICA = "https://tenor.com/view/this-is-america-childish-gambino-dancing-gif-12164113"
 
 IMAGES = [
     "https://i.imgur.com/EfGWKP7.gif",
